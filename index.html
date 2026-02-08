@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>编织小世界 - 作品展示与教程</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">编织小世界</div>
+            <ul class="nav-menu">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#gallery">作品展示</a></li>
+                <li><a href="#tutorial">教程专区</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>欢迎来到编织小世界</h1>
+            <p>在这里分享我的编织作品，一起探索编织的乐趣</p>
+            <a href="#gallery" class="btn btn-primary">浏览作品</a>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">作品展示</h2>
+            <p class="section-subtitle">我的编织作品合集</p>
+            <div class="filter-buttons" id="filterButtons">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="玩偶">玩偶</button>
+                <button class="filter-btn" data-filter="花卉">花卉</button>
+                <button class="filter-btn" data-filter="人偶">人偶</button>
+                <button class="filter-btn" data-filter="小物件">小物件</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+            </div>
+        </div>
+    </section>
+
+    <section id="tutorial" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">教程专区</h2>
+            <p class="section-subtitle">按类别浏览图解教程</p>
+            <div class="basics-card" data-category="basics">
+                <div class="basics-icon">📖</div>
+                <div class="basics-content">
+                    <h3 class="basics-title">钩针基础知识</h3>
+                    <p class="basics-description">新手必看！了解钩针工具、基础针法、图解阅读等入门知识</p>
+                </div>
+                <div class="basics-arrow">→</div>
+            </div>
+            <div class="category-grid" id="categoryGrid">
+                <div class="category-card" data-category="bags">
+                    <div class="category-icon">👜</div>
+                    <h3 class="category-title">包包</h3>
+                    <p class="category-description">各种包包的编织图解</p>
+                </div>
+                <div class="category-card" data-category="smallItems">
+                    <div class="category-icon">🎀</div>
+                    <h3 class="category-title">小物件</h3>
+                    <p class="category-description">可爱小物件的编织教程</p>
+                </div>
+                <div class="category-card" data-category="flowers">
+                    <div class="category-icon">🌸</div>
+                    <h3 class="category-title">花卉</h3>
+                    <p class="category-description">精美花卉编织图解</p>
+                </div>
+                <div class="category-card" data-category="dolls">
+                    <div class="category-icon">🧸</div>
+                    <h3 class="category-title">玩偶</h3>
+                    <p class="category-description">可爱玩偶编织教程</p>
+                </div>
+                <div class="category-card" data-category="figures">
+                    <div class="category-icon">🧵</div>
+                    <h3 class="category-title">人偶</h3>
+                    <p class="category-description">精致人偶编织图解</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 编织小世界. 用心编织，用爱分享.</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
